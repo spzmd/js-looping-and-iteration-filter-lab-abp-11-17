@@ -24,6 +24,9 @@ function fuzzyMatch(drivers, string) {
   return drivers.filter(driver => driver.slice(0, string.length) === string);
 }
 
+function matchName(drivers, string) {
+  return drivers.filter(driver => driver.name === string);
+}
 /*
 function findMatching(collection, driver) {
   for (const driver of collection) {
