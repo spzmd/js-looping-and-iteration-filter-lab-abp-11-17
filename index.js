@@ -21,7 +21,7 @@ function findMatching(drivers, string) {
 }
 
 function fuzzyMatch(drivers, string) {
-  return drivers.filter(driver => slice() )
+  return drivers.filter(driver => slice(0, string.length) === string);
 }
 
 /*
